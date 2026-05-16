@@ -1,14 +1,10 @@
 # Carta
 
-A local automation tool that runs SQL queries on a schedule, produces xlsx workbooks, and saves Outlook-ready `.eml` drafts the analyst opens, reviews, and sends.
-
-Built on the same patterns as [mesa](../mesa): one Python file per report, pydantic-validated contract, auto-discovery, per-definition error isolation.
-
-The authoritative reference is `SPEC.md` in the parent directory.
+A local automation tool that runs SQL queries on a schedule, produces xlsx workbooks, and saves Outlook-ready `.eml` drafts the analyst opens, reviews, and sends. Built on the same patterns as [mesa](https://github.com/cosmicspork/mesa).
 
 ## Why this exists
 
-The manual loop is: run a query in the GUI, save xlsx, paste into Outlook, fix the subject, attach, send. Doing this once a week works. Doing it for ten reports twice a week doesn't.
+The manual loop is: run a query in the GUI, save xlsx, paste into Outlook, fix the subject, attach, send. Doing this occasionally works. Doing it for ten reports often doesn't.
 
 Carta automates the middle. Drop a Python file per report into `definitions/` with a sibling `.sql` next to it, double-click `run.bat`, and Carta produces a folder of ready-to-send `.eml` files with the xlsx already attached. The analyst opens each draft in Outlook, reviews it, and hits Send.
 
