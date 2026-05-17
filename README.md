@@ -1,6 +1,6 @@
 # Carta
 
-A local automation tool that runs SQL queries on a schedule, produces xlsx workbooks, and saves Outlook-ready `.eml` drafts the analyst opens, reviews, and sends. Built on the same patterns as [mesa](https://github.com/cosmicspork/mesa).
+A local automation tool that runs SQL queries on demand (or under Task Scheduler / cron), produces xlsx workbooks, and saves Outlook-ready `.eml` drafts the analyst opens, reviews, and sends. Built on the same patterns as [mesa](https://github.com/cosmicspork/mesa).
 
 ## Why this exists
 
