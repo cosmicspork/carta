@@ -1,8 +1,11 @@
+"""Copy this to config.py and edit. config.py is gitignored (it names your
+database connection, keyring service, and active reports)."""
+
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent
 
-DEFINITIONS_DIR = REPO_ROOT / "definitions"
+DEFINITIONS_DIR = REPO_ROOT / "definitions"  # one .py + .sql per report (gitignored)
 OUTPUT_DIR = REPO_ROOT / "out"
 
 # Pick one backend; install the matching driver extra.

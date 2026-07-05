@@ -16,6 +16,7 @@ Requires [uv](https://github.com/astral-sh/uv) and Python 3.13.
 
 ```bash
 uv sync --extra dev --extra oracle      # or --extra postgres, --extra mysql, --extra mssql
+cp config.example.py config.py          # then edit DATABASE_URL + ACTIVE
 ```
 
 SQLite needs no extra (built into Python). Pick whichever driver matches your `DATABASE_URL`.
